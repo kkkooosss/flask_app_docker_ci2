@@ -1,0 +1,54 @@
+name: Python package
+
+on: [push]
+
+jobs:
+  Build_and_test_Flask_app:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.6]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        sudo apt-get install python3-venv -y
+        python3 -m venv challenge_venv
+        source challenge_venv/bin/activate
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Run app
+      run: | 
+        source challenge_venv/bin/activate
+        export FLASK_APP=app/main.py
+        pwd
+        nohup flask run &  
+    - name: Test with pytest
+      run: |
+        source challenge_venv/bin/activate
+        python tests.py  
+  
+  Test_of_Dockerfile_and_Docker_container: 
+    runs-on: ubuntu-latest
+    steps:  
+    - uses: actions/checkout@v2
+    - name: Create Docker image 
+      run: |
+        docker build -t app:latest .
+    - name: Run Deocker container
+      run: |
+        docker run -d -p 5000:5000 app:latest
+    - name: Test with pytest
+      run: |
+        sudo apt-get install python3-venv -y
+        python3 -m venv challenge_venv
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        source challenge_venv/bin/activate
+        python tests.py
+        
