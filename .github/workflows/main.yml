@@ -10,10 +10,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: Create Docker image 
       run: |
-        docker build -t app:latest .
+ #       docker build -t app:latest .
     - name: Run Deocker container
       run: |
-        docker run -d -p 5000:5000 app:latest
+  #      docker run -d -p 5000:5000 app:latest
     - name: Test with pytest
       run: |
         sudo apt-get install python3-venv -y
@@ -21,6 +21,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip list
         python -m pip install flask
+        python -m pip list
 #        pip install -r requirements.txt
 #        source challenge_venv/bin/activate
 #        python tests.py
