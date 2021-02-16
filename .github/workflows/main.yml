@@ -48,6 +48,7 @@ jobs:
         sudo apt-get install python3-venv -y
         python3 -m venv challenge_venv
         python -m pip install --upgrade pip
+        python -m pip install flask
         pip install -r requirements.txt
         source challenge_venv/bin/activate
         python tests.py
