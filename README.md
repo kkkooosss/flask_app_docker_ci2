@@ -1,4 +1,4 @@
-https://img.shields.io/github/workflow/status/kkkooosss/flask_app_docker_ci2/Python%20package?label=Build_and_test_Flask_app
+![Build_and_test_Flask_app](https://img.shields.io/github/workflow/status/kkkooosss/flask_app_docker_ci2/Python%20package?label=Build_and_test_Flask_app)
 
 
 
