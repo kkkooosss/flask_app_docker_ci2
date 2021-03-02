@@ -1,4 +1,4 @@
-![flask_app_docker_ci2](https://github.com/kkkooosss/flask_app_docker_ci2/workflows/main.yml/badge.svg)
+![flask_app_docker_ci2](https://github.com/github/flask_app_docker_ci2/actions/workflows/main.yml/badge.svg)
 
 Your mission, should you choose to accept it, involves developing an app, containerize it and set up a CI for it.
 Please read carefully all the instructions.
