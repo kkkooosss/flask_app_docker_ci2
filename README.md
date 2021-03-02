@@ -1,7 +1,6 @@
-![flask_app_docker_ci2](https://github.com/github/flask_app_docker_ci2/actions/workflows/Python%20package/badge.svg)
-![example workflow](https://github.com/github/flask_app_docker_ci2/actions/workflows/main.yml/badge.svg)
-![example branch parameter](https://github.com/github/flask_app_docker_ci2/actions/workflows/main.yml/badge.svg?branch=master)
-![example event parameter](https://github.com/github/flask_app_docker_ci2/actions/workflows/main.yml/badge.svg?event=pull_request)
+https://img.shields.io/github/workflow/status/kkkooosss/flask_app_docker_ci2/Python%20package?label=Build_and_test_Flask_app
+
+
 
 Your mission, should you choose to accept it, involves developing an app, containerize it and set up a CI for it.
 Please read carefully all the instructions.
