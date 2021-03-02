@@ -1,6 +1,6 @@
 ![Build_and_test_Flask_app](https://img.shields.io/github/workflow/status/kkkooosss/flask_app_docker_ci2/Python%20package?label=Build_and_test_Flask_app)
 
-
+[![flask_app_docker_ci2](https://github.com/kkkooosss/flask_app_docker_ci2/actions/workflows/main.yml/badge.svg)](https://github.com/kkkooosss/flask_app_docker_ci2/actions/workflows/main.yml)
 
 Your mission, should you choose to accept it, involves developing an app, containerize it and set up a CI for it.
 Please read carefully all the instructions.
